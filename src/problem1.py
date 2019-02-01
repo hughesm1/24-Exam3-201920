@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Marcus Hughes-Oliver.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -139,7 +139,44 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
+    for k in range(1, n):
+        if fibonacci(k + 1) >= n:
+            return fibonacci(k)
+        if n == 2:
+            return fibonacci(2)
 
+
+
+    # seq = [0,1,0,1, 1, 2, 3, 5]
+    # mhmm = 0
+    # for k in range(1, n):
+    #     # for o in range(len(seq)):
+    #     mhmm = mhmm + seq[k-1]
+    #     print(mhmm)
+    #     if mhmm >= n:
+    #         while True:
+    #             mhmm = mhmm - seq[len(seq) - k]
+    #             print(mhmm)
+    #             if mhmm < n:
+    #                 return mhmm
+
+    # fib = 0
+    # for k in range(5, n):
+    #     seq[k] = seq[k-1] + seq[k]
+    #     print(seq)
+    # summ = 0
+    # l = 1
+    # for u in range(1, n):
+    #     print(summ)
+    #     if summ >= n:
+    #         return summ
+    #     if 4> u > 1:
+    #         summ = summ + u - (2)
+    #     elif u>3:
+    #         summ = summ + u -(l)
+    #     else:
+    #         summ = summ + u
+        # print(summ)
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
